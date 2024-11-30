@@ -26,7 +26,7 @@ const Login = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            const res = await axios.post('https://instaclone-g9h5.onrender.com/api/v1/user/login', input, {
+            const res = await axios.post('/api/v1/user/login', input, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -58,7 +58,7 @@ const Login = () => {
         <div className='flex items-center w-screen h-screen justify-center'>
             <form onSubmit={signupHandler} className='shadow-lg flex flex-col gap-5 p-8'>
                 <div className='my-4'>
-                    <h1 className='text-center font-bold text-xl'>LOGO</h1>
+                    <h1 className='text-center font-bold text-xl'>SKY</h1>
                     <p className='text-sm text-center'>Login to see photos & videos from your friends</p>
                 </div>
                 <div>
