@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/sky-mern")
+        await mongoose.connect(process.env.MONGO_URI)
         console.log('mongodb connected successfully.');
     } catch (error) {
         console.log(error);
